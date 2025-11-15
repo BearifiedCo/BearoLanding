@@ -15,6 +15,11 @@ const config: Config = {
           forest: '#2F4F2F',
           cream: '#FFF8DC',
         },
+        primary: {
+          DEFAULT: '#00D632',
+          light: '#00B82E',
+          dark: '#009A25',
+        },
         apechain: {
           primary: '#FF6B00',
           secondary: '#FFE5D0',

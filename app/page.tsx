@@ -1,55 +1,56 @@
 import { HeroSection } from '@/components/features/HeroSection'
 import { FeatureCard } from '@/components/features/FeatureCard'
-import { ChainComparison } from '@/components/features/ChainComparison'
 import { StatsSection } from '@/components/features/StatsSection'
 import { Button } from '@/components/ui/Button'
 import {
   Zap,
   Shield,
-  Coins,
+  DollarSign,
   Smartphone,
-  TrendingUp,
+  Clock,
   Users,
   ArrowRight,
+  CreditCard,
+  Globe,
 } from 'lucide-react'
 import Link from 'next/link'
 
 const features = [
   {
-    icon: <Zap className="h-6 w-6" />,
-    title: 'Lightning Fast',
+    icon: <Zap className="h-8 w-8" />,
+    title: 'Instant Payments',
     description:
-      'Process transactions in seconds with our optimized multi-chain infrastructure.',
+      'Send and receive money in seconds. No waiting, no delays. Just instant transfers.',
   },
   {
-    icon: <Shield className="h-6 w-6" />,
-    title: 'Secure & Safe',
+    icon: <Shield className="h-8 w-8" />,
+    title: 'Bank-Level Security',
     description:
-      'Your funds are protected with industry-leading security practices and encryption.',
+      'Your money is protected with enterprise-grade encryption and security protocols.',
   },
   {
-    icon: <Coins className="h-6 w-6" />,
-    title: 'Low Fees',
+    icon: <DollarSign className="h-8 w-8" />,
+    title: 'Zero Fees',
     description:
-      'Save money with competitive transaction fees on both ApeChain and Solana.',
+      'Send money to friends and family without worrying about hidden fees or charges.',
   },
   {
-    icon: <Smartphone className="h-6 w-6" />,
-    title: 'Mobile Friendly',
+    icon: <Smartphone className="h-8 w-8" />,
+    title: 'Works Everywhere',
     description:
-      'Manage your payments anywhere with our fully responsive design.',
+      'Pay anyone, anywhere. Your phone is your wallet. Simple, fast, and always with you.',
   },
   {
-    icon: <TrendingUp className="h-6 w-6" />,
-    title: 'Real-time Tracking',
+    icon: <Clock className="h-8 w-8" />,
+    title: '24/7 Availability',
     description:
-      'Monitor all your transactions with live updates and detailed history.',
+      'Send money anytime, day or night. No business hours, no restrictions.',
   },
   {
-    icon: <Users className="h-6 w-6" />,
-    title: 'Easy Integration',
+    icon: <Globe className="h-8 w-8" />,
+    title: 'Global Reach',
     description:
-      'Simple wallet connection process compatible with popular Web3 wallets.',
+      'Break down borders. Send money across the world instantly, just like sending a text.',
   },
 ]
 
@@ -60,18 +61,18 @@ export default function Home() {
       <HeroSection />
 
       {/* Features Grid */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Why Choose Bearo Payments?
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+              Why millions choose us
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Everything you need for seamless multi-chain payments
+            <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+              The simplest way to send and receive money. Built for everyday life.
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <FeatureCard key={feature.title} {...feature} />
             ))}
@@ -79,31 +80,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Chain Comparison */}
-      <ChainComparison />
+      {/* How It Works */}
+      <section className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+              How it works
+            </h2>
+            <p className="mt-4 text-xl text-gray-600">
+              Sending money has never been easier
+            </p>
+          </div>
+
+          <div className="grid gap-12 md:grid-cols-3">
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#00D632] text-white text-3xl font-bold mb-6">
+                1
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Sign Up</h3>
+              <p className="text-gray-600 text-lg">
+                Create your account in seconds. No complicated forms, just your phone number.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#00D632] text-white text-3xl font-bold mb-6">
+                2
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Add Money</h3>
+              <p className="text-gray-600 text-lg">
+                Link your bank account or add funds instantly. Your money, your way.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#00D632] text-white text-3xl font-bold mb-6">
+                3
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Send & Receive</h3>
+              <p className="text-gray-600 text-lg">
+                Pay friends, split bills, or get paid. It's that simple.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Stats */}
       <StatsSection />
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-bear-brown to-bear-forest py-16 text-white">
+      <section className="bg-gradient-to-br from-[#00D632] to-[#00B82E] py-20 text-white">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
-          <p className="mt-4 text-lg text-bear-cream">
-            Join thousands of users already using Bearo Payments for their
-            multi-chain transactions.
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">Ready to get started?</h2>
+          <p className="mt-4 text-xl text-white/90 mb-10">
+            Join millions of people using the simplest way to send and receive money.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Link href="/dashboard">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link href="/dashboard" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                variant="secondary"
+                className="bg-white text-[#00D632] hover:bg-white/90 font-semibold text-lg px-8 py-4 shadow-xl w-full sm:w-auto"
                 icon={<ArrowRight className="h-5 w-5" />}
               >
-                Launch App
+                Get Started Free
               </Button>
             </Link>
           </div>
+          <p className="mt-6 text-sm text-white/80">
+            No credit card required • Free to sign up • Instant setup
+          </p>
         </div>
       </section>
     </div>

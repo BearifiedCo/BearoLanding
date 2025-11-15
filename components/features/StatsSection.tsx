@@ -1,21 +1,21 @@
 import { formatNumber, formatUSD } from '@/lib/utils/format'
 
 const stats = [
-  { label: 'Total Transactions', value: '150,000+' },
-  { label: 'Total Volume', value: '$50M+' },
-  { label: 'Active Users', value: '10,000+' },
-  { label: 'Supported Tokens', value: '50+' },
+  { label: 'Active Users', value: '2.5M+' },
+  { label: 'Transactions Processed', value: '$500M+' },
+  { label: 'Countries Supported', value: '180+' },
+  { label: 'Average Transfer Time', value: '< 3 sec' },
 ]
 
 export function StatsSection() {
   return (
-    <section className="bg-bear-forest py-16 text-white">
+    <section className="bg-white py-20 border-t border-gray-100">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-12 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-3xl font-bold text-bear-honey">{stat.value}</p>
-              <p className="mt-2 text-sm text-bear-cream">{stat.label}</p>
+              <p className="text-4xl sm:text-5xl font-bold text-[#00D632] mb-2">{stat.value}</p>
+              <p className="text-base text-gray-600 font-medium">{stat.label}</p>
             </div>
           ))}
         </div>

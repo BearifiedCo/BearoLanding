@@ -26,8 +26,10 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="text-2xl">🐻</div>
-          <span className="text-xl font-bold text-bear-brown">{APP_NAME}</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00D632] text-white text-xl font-bold">
+            B
+          </div>
+          <span className="text-xl font-bold text-gray-900">{APP_NAME}</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -37,9 +39,9 @@ export function Header() {
               key={item.name}
               href={item.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-bear-brown',
+                'text-sm font-medium transition-colors hover:text-[#00D632]',
                 pathname === item.href
-                  ? 'text-bear-brown'
+                  ? 'text-[#00D632]'
                   : 'text-gray-600'
               )}
             >
@@ -78,7 +80,7 @@ export function Header() {
                 className={cn(
                   'block rounded-md px-3 py-2 text-base font-medium',
                   pathname === item.href
-                    ? 'bg-bear-brown/10 text-bear-brown'
+                    ? 'bg-[#00D632]/10 text-[#00D632]'
                     : 'text-gray-600 hover:bg-gray-50'
                 )}
               >
