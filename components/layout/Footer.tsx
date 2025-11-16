@@ -11,13 +11,15 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="text-2xl">🐻</div>
-              <span className="text-xl font-bold text-bear-brown">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00D632] text-white text-xl font-bold">
+                B
+              </div>
+              <span className="text-xl font-bold text-gray-900">
                 {APP_NAME}
               </span>
             </div>
             <p className="mt-4 text-sm text-gray-600">
-              {APP_DESCRIPTION}. Supporting ApeChain and Solana blockchains.
+              {APP_DESCRIPTION}
             </p>
           </div>
 
@@ -28,7 +30,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
                   Dashboard
                 </Link>
@@ -36,17 +38,17 @@ export function Footer() {
               <li>
                 <Link
                   href="/send"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
-                  Send Payment
+                  Send Money
                 </Link>
               </li>
               <li>
                 <Link
                   href="/receive"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
-                  Receive Payment
+                  Request Money
                 </Link>
               </li>
             </ul>
@@ -59,7 +61,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
                   Documentation
                 </a>
@@ -67,7 +69,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
                   Help Center
                 </a>
@@ -75,7 +77,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-gray-600 hover:text-bear-brown"
+                  className="text-sm text-gray-600 hover:text-[#00D632] transition-colors"
                 >
                   Contact Us
                 </a>

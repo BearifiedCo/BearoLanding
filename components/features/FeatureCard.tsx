@@ -9,13 +9,13 @@ export interface FeatureCardProps {
 
 export function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <Card hoverable className="text-center">
-      <div className="flex flex-col items-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-bear-honey/30 text-bear-brown">
+    <Card hoverable className="text-left border-0 shadow-md hover:shadow-xl transition-all duration-300">
+      <div className="flex flex-col">
+        <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#00D632]/10 text-[#00D632] mb-4">
           {icon}
         </div>
-        <h3 className="mt-4 text-lg font-semibold text-gray-900">{title}</h3>
-        <p className="mt-2 text-sm text-gray-600">{description}</p>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+        <p className="text-base text-gray-600 leading-relaxed">{description}</p>
       </div>
     </Card>
   )

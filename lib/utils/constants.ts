@@ -1,7 +1,7 @@
-export const APP_NAME = 'Bearo Payments'
-export const APP_DESCRIPTION = 'Multi-chain payments made easy'
+export const APP_NAME = 'Bearo'
+export const APP_DESCRIPTION = 'Next-generation payment infrastructure that bridges traditional finance with crypto, enabling seamless transactions for everyday consumers.'
 
-export const SUPPORTED_CHAINS = ['apechain', 'solana'] as const
+export const SUPPORTED_CHAINS = ['berachain'] as const
 
 export const TRANSACTION_SPEEDS = {
   fast: { label: 'Fast', multiplier: 1.5 },

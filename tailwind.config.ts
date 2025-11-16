@@ -9,11 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        border: 'hsl(var(--border))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         bear: {
           brown: '#8B4513',
           honey: '#FFB347',
           forest: '#2F4F2F',
           cream: '#FFF8DC',
+        },
+        primary: {
+          DEFAULT: '#00D632',
+          light: '#00B82E',
+          dark: '#009A25',
         },
         apechain: {
           primary: '#FF6B00',
