@@ -6,6 +6,7 @@
 :root {
   --font-dmsans: var(--dm-sans);
   --font-syne: var(--syne);
+  --font-mono: var(--geist-mono);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);

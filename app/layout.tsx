@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
 
 const geistMono = Geist_Mono({
   subsets: ['latin'],
-  variable: '--geistMono',
+  variable: '--geist-mono',
 })
 
 const geist = Geist({
