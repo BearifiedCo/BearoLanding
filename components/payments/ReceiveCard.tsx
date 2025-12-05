@@ -153,7 +153,7 @@ export function ReceiveCard() {
           helperText="Generate a payment link with a specific amount"
         />
         
-        {navigator.share && (
+        {typeof window !== 'undefined' && 'share' in navigator && (
           <Button
             variant="outline"
             fullWidth

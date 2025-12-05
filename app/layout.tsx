@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Sans, Syne } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { WalletProvider } from '@/contexts/WalletContext'
 import { APP_NAME, APP_DESCRIPTION } from '@/lib/utils/constants'
 
-const inter = Inter({ subsets: ['latin'] })
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-dm-sans',
+})
+const syne = Syne({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-syne',
+})
 
 export const metadata: Metadata = {
   title: APP_NAME,
@@ -20,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`font-sans ${dmSans.variable} ${syne.variable}`}>
         <WalletProvider>
           <div className="flex min-h-screen flex-col">
             <Header />
