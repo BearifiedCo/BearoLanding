@@ -39,7 +39,7 @@ export const howItWorksSteps = [
   },
 ];
 
-export const HowItWorksStep = ({
+const HowItWorksStep = ({
   title,
   description,
   mediaSrc,

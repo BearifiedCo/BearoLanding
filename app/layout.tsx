@@ -1,31 +1,31 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Geist, Geist_Mono, Syne } from 'next/font/google'
-import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { WalletProvider } from '@/contexts/WalletContext'
 import { APP_NAME, APP_DESCRIPTION } from '@/lib/utils/constants'
+import './globals.css'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--dm-sans',
+  variable: '--font-dm-sans',
 })
 
 const geistMono = Geist_Mono({
   subsets: ['latin'],
-  variable: '--geist-mono',
+  variable: '--font-geist-mono',
 })
 
 const geist = Geist({
   subsets: ['latin'],
-  variable: '--geist',
+  variable: '--font-geist',
 })
 
 const syne = Syne({
   subsets: ['latin'],
   weight: ['700', '800'],
-  variable: '--syne',
+  variable: '--font-syne',
 })
 
 export const metadata: Metadata = {
@@ -40,10 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${dmSans.variable} ${syne.variable} ${geistMono.variable} ${geist.variable}`}>
+      <body className={`${dmSans.variable} ${syne.variable} ${geistMono.variable} ${geist.variable}`}>
         <WalletProvider>
           <div className="flex min-h-screen flex-col">
-            <Header />
+            {/* <Header /> */}
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
