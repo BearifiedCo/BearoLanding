@@ -1,5 +1,3 @@
-import { formatNumber, formatUSD } from '@/lib/utils/format'
-
 const stats = [
   { label: 'Total Transactions', value: '150,000+' },
   { label: 'Total Volume', value: '$50M+' },

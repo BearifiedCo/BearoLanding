@@ -70,13 +70,13 @@ export default function SendPage() {
         <div className="mt-6 flex gap-3">
           <Button
             variant="outline"
-            fullWidth
+            className="w-full"
             onClick={() => setShowSuccessModal(false)}
           >
             Close
           </Button>
           <Button
-            fullWidth
+            className="w-full"
             onClick={() => {
               setShowSuccessModal(false)
               router.push('/transactions')

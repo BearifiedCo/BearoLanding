@@ -201,11 +201,11 @@ export function SendForm({ onSubmit }: SendFormProps) {
         {/* Submit Button */}
         <Button
           type="submit"
-          fullWidth
           size="lg"
+          className="w-full"
           isLoading={isSubmitting}
-          icon={<Send className="h-5 w-5" />}
         >
+          <Send className="h-5 w-5" />
           {isSubmitting ? 'Sending...' : 'Send Payment'}
         </Button>
       </form>

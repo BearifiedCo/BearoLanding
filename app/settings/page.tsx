@@ -66,7 +66,7 @@ export default function SettingsPage() {
               onChange={(e) => setEmail(e.target.value)}
               helperText="For notifications and updates"
             />
-            <Button icon={<Save className="h-4 w-4" />}>Save Profile</Button>
+            <Button><Save className="h-4 w-4" />Save Profile</Button>
           </div>
         </Card>
 
@@ -124,7 +124,8 @@ export default function SettingsPage() {
                 { value: 'fr', label: 'Français' },
               ]}
             />
-            <Button icon={<Save className="h-4 w-4" />}>
+            <Button>
+              <Save className="h-4 w-4" />
               Save Preferences
             </Button>
           </div>

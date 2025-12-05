@@ -82,9 +82,9 @@ export function ReceiveCard() {
               />
               <Button
                 variant="outline"
-                icon={copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                 onClick={handleCopy}
               >
+                {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                 {copied ? 'Copied!' : 'Copy'}
               </Button>
             </div>
@@ -122,9 +122,9 @@ export function ReceiveCard() {
               />
               <Button
                 variant="outline"
-                icon={copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                 onClick={handleCopy}
               >
+                {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                 {copied ? 'Copied!' : 'Copy'}
               </Button>
             </div>
@@ -156,11 +156,10 @@ export function ReceiveCard() {
         {typeof window !== 'undefined' && 'share' in navigator && (
           <Button
             variant="outline"
-            fullWidth
-            className="mt-4"
-            icon={<Share2 className="h-4 w-4" />}
+            className="mt-4 w-full"
             onClick={handleShare}
           >
+            <Share2 className="h-4 w-4" />
             Share Payment Link
           </Button>
         )}

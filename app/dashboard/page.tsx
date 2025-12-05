@@ -61,16 +61,17 @@ export default function DashboardPage() {
           <WalletBalance />
           <div className="mt-4 flex gap-3">
             <Link href="/send" className="flex-1">
-              <Button fullWidth icon={<Send className="h-4 w-4" />}>
+              <Button className="w-full">
+                <Send className="h-4 w-4" />
                 Send
               </Button>
             </Link>
             <Link href="/receive" className="flex-1">
               <Button
-                fullWidth
+                className="w-full"
                 variant="outline"
-                icon={<Download className="h-4 w-4" />}
               >
+                <Download className="h-4 w-4" />
                 Receive
               </Button>
             </Link>
