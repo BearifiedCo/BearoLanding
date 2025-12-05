@@ -20,9 +20,9 @@ export function WalletButton() {
         <Button
           variant="outline"
           size="sm"
-          icon={<LogOut className="h-4 w-4" />}
           onClick={disconnect}
         >
+          <LogOut className="h-4 w-4" />
           <span className="hidden sm:inline">Disconnect</span>
         </Button>
       </div>
@@ -31,10 +31,8 @@ export function WalletButton() {
 
   return (
     <>
-      <Button
-        icon={<Wallet className="h-4 w-4" />}
-        onClick={() => setIsModalOpen(true)}
-      >
+      <Button onClick={() => setIsModalOpen(true)}>
+        <Wallet className="h-4 w-4" />
         Connect Wallet
       </Button>
       <WalletModal
