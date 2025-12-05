@@ -8,32 +8,32 @@ import { IOSDownloadButton } from "./IOSDownloadButton";
 
 export const howItWorksSteps = [
   {
-    title: "How I use AI",
-    description: "I Automate everything. Find out how.",
+    title: "Bearified Instant Payments",
+    description: "Send money to anyone, anywhere, in seconds. No fees, no waiting. Just pure instant transfers powered by blockchain technology.",
     mediaSrc: "/screen1.jpg",
     imagePosition: "left" as const,
   },
   {
-    title: "Scale Operations",
-    description: "Automated workflows to handle enterprise volume.",
+    title: "The Bearo Card.",
+    description: "On our roadmap and currently in development. A premium card designed for the future with instant notifications, real-time spending insights, and exclusive rewards. Your money, bearified.",
     mediaSrc: "/screen2.jpg",
     imagePosition: "right" as const,
   },
   {
-    title: "Maximize Profit",
-    description: "Optimized margins through strategic engineering.",
+    title: "Your Money. Your Honey.",
+    description: "HONEY is dollars. It's euros. It's your local currency—powered by stablecoins. Whether you're crypto-native or have never touched a wallet, Bearo abstracts it all away. Just like Cash App, Venmo, or PayPal—but with the power of Berachain under the hood.",
     mediaSrc: "/screen3.jpg",
     imagePosition: "left" as const,
   },
   {
-    title: "Maximize Profit",
-    description: "Optimized margins through strategic engineering.",
+    title: "Earn BEARCO Points.",
+    description: "Every send, every spend, every friend you bring to the den earns you BEARCO points. Think Starbucks Stars, but for your money. Redeem for perks, boosts, and exclusive rewards. The more you use Bearo, the sweeter it gets.",
     mediaSrc: "/screen4.jpg",
-    imagePosition: "left" as const,
+    imagePosition: "right" as const,
   },
   {
-    title: "Maximize Profit",
-    description: "Optimized margins through strategic engineering.",
+    title: "Trade Memecoins.",
+    description: "Buy, sell, and trade the hottest memecoins directly in Bearo. From established tokens to the next viral sensation—we've got you covered. Zero complexity, maximum degen energy.",
     mediaSrc: "/screen5.jpg",
     imagePosition: "left" as const,
   },

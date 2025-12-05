@@ -69,10 +69,10 @@ export default function Hero() {
               
               {/* Card Header */}
               <div className="flex flex-col">
-                <span className="font-syne text-lg font-extrabold tracking-wide text-foreground md:text-2xl">
+                <span className="font-syne text-lg font-extrabold tracking-wide text-black md:text-2xl">
                   $BEARO
                 </span>
-                <span className="font-mono text-5xl font-extrabold tracking-tighter text-foreground md:text-[61px]">
+                <span className="font-mono text-5xl font-extrabold tracking-tighter text-black md:text-[61px]">
                   $67
                 </span>
               </div>
