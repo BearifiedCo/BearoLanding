@@ -111,8 +111,6 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-dm-sans: var(--font-dm-sans);
-  --font-syne: var(--font-syne);
 }
 
 @layer base {
