@@ -33,7 +33,7 @@ export function IOSDownloadButton({
     >
       <span 
         className={cn(
-          "capitalize font-sans text-[16px] font-medium leading-[20.8px] tracking-[-0.52px] text-center whitespace-nowrap",
+          "capitalize font-dmsans text-[16px] font-medium leading-[20.8px] tracking-[-0.52px] text-center whitespace-nowrap",
           // Text color logic
           isSecondary ? "text-black" : "text-white"
         )}

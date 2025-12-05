@@ -74,7 +74,7 @@ const HowItWorksStep = ({
         </span>
       </BlurFade>
       <BlurFade delay={0.3} inView direction="up">
-        <span className="flex w-full max-w-[300px] font-sans text-center md:text-left text-pretty lg:max-w-[490px] justify-center lg:justify-start items-start self-stretch text-[18px] leading-[1.2] lg:text-[20px] lg:leading-[24px] font-normal  text-foreground/60 relative capitalize">
+        <span className="flex w-full max-w-[300px] font-dmsans text-center md:text-left text-pretty lg:max-w-[490px] justify-center lg:justify-start items-start self-stretch text-[18px] leading-[1.2] lg:text-[20px] lg:leading-[24px] font-normal  text-foreground/60 relative capitalize">
             {description}
         </span>
       </BlurFade>

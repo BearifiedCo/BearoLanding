@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col items-center overflow-hidden bg-[#181818] font-dmsans text-white selection:bg-[#E6FF46] selection:text-black">
+    <div className="relative flex min-h-screen w-full flex-col items-center overflow-hidden bg-background font-dmsans text-foreground selection:bg-[#E6FF46] selection:text-black">
       {/* 
         Custom Animation Styles
         In a real project, these would be in tailwind.config.ts
@@ -26,9 +26,9 @@ export default function Hero() {
       <header className="z-50 mt-8 flex items-center gap-3">
         {/* Logo Icon */}
         <div className="relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-md bg-gradient-to-br from-white/20 to-white/5">
-          <ArrowUpRight className="h-4 w-4 text-white" strokeWidth={3} />
+          <ArrowUpRight className="h-4 w-4 text-foreground" strokeWidth={3} />
         </div>
-        <span className="font-syne text-2xl font-extrabold tracking-wide text-white">
+        <span className="font-syne text-2xl font-extrabold tracking-wide text-foreground">
           bearo.cash
         </span>
       </header>
@@ -37,13 +37,21 @@ export default function Hero() {
       <main className="relative flex flex-1 w-full max-w-[1440px] flex-col items-center justify-center px-4 pb-12 pt-8">
         
         {/* Hero Title */}
-        <h1 className="z-10 mb-8 font-syne text-[clamp(4rem,12vw,8rem)] font-extrabold leading-none text-white sm:mb-12">
+        <h1 className="z-10 mb-8 font-syne text-[clamp(4rem,12vw,8rem)] font-extrabold leading-none text-foreground sm:mb-12">
           BEARO
         </h1>
 
         {/* Central Visual Composition */}
         {/* The container is responsive: constrained on desktop, adaptable on mobile */}
-        <div className="relative flex aspect-square bg-green-400 w-[90vw] items-center justify-center md:max-w-[700px]">
+        <div className="relative flex aspect-square w-[90vw] items-center justify-center md:max-w-[700px]">
+          <video
+            className="absolute inset-0 h-full w-full object-cover rounded-[3rem]"
+            src="/bearo-cash.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           {/* Purple Floating Card (Top Right) */}
           <div className="animate-float-slow absolute -right-2 top-0 z-20 md:-right-6 md:-top-12">
             <div className="relative flex h-[160px] w-[150px] items-center justify-center rounded-[40px] bg-[#CFA3F2] shadow-[0_20px_40px_rgba(207,163,242,0.4)] transition-transform duration-500 hover:scale-105 md:h-[235px] md:w-[220px] md:rounded-[70px]">
@@ -61,10 +69,10 @@ export default function Hero() {
               
               {/* Card Header */}
               <div className="flex flex-col">
-                <span className="font-syne text-lg font-extrabold tracking-wide text-black md:text-2xl">
+                <span className="font-syne text-lg font-extrabold tracking-wide text-foreground md:text-2xl">
                   $BEARO
                 </span>
-                <span className="font-mono text-5xl font-extrabold tracking-tighter text-black md:text-[61px]">
+                <span className="font-mono text-5xl font-extrabold tracking-tighter text-foreground md:text-[61px]">
                   $67
                 </span>
               </div>
@@ -96,7 +104,7 @@ export default function Hero() {
 
         {/* Bottom CTA Section */}
         <div className="relative z-30 mt-20 w-full max-w-[443px] md:mt-32">
-          <div className="group relative flex h-16 w-full items-center justify-between rounded-full bg-white py-2 pl-8 pr-2 shadow-xl transition-all hover:shadow-2xl md:h-20">
+          <div className="group relative flex h-16 w-full items-center justify-between rounded-full border border-border bg-white py-2 pl-8 pr-2 shadow-xl transition-all hover:shadow-2xl md:h-20">
             <input 
               type="email" 
               placeholder="email" 
