@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { DM_Sans, Syne } from 'next/font/google'
+import { DM_Sans, Geist, Geist_Mono, Syne } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -9,12 +9,23 @@ import { APP_NAME, APP_DESCRIPTION } from '@/lib/utils/constants'
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--font-dm-sans',
+  variable: '--dm-sans',
 })
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  variable: '--geistMono',
+})
+
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--geist',
+})
+
 const syne = Syne({
   subsets: ['latin'],
   weight: ['700', '800'],
-  variable: '--font-syne',
+  variable: '--syne',
 })
 
 export const metadata: Metadata = {
@@ -29,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${dmSans.variable} ${syne.variable}`}>
+      <body className={`font-sans ${dmSans.variable} ${syne.variable} ${geistMono.variable} ${geist.variable}`}>
         <WalletProvider>
           <div className="flex min-h-screen flex-col">
             <Header />
